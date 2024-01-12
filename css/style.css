@@ -1,0 +1,55 @@
+/* html{}랑 같다고 이해하면 됨. CSS 전역 변수 선언 */
+/* GLOBAL */
+:root {
+  /* Colors */
+
+  --color-white: #ffffff;
+
+  --color-black: #050a13;
+
+  --color-blue: #03e8f9;
+
+  --color-orange: #fd6413;
+
+  --color-gray: #1b1e26;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  /* ul,li 앞에 글머리 기호 . . 사라지는 프로퍼티 */
+  list-style: none;
+  /* 기본적으로 ul안에 li 가 있는데 패딩값이 기본 디폴트라 패딩 0으로 잡아주면 사라진다 */
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+button {
+  /* 버튼 디폴트 효과 0으로 만들기 */
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+}
+
+button:focus {
+  /* 한번클릭하면 블루로 포커싱댐 */
+  outline: 1px solid var(--color-blue);
+}
