@@ -1,0 +1,411 @@
+<!-- 웹사이트 첫번쨰 파일은 index.html이란걸로 대부분 만듬 -->
+<!-- png backgroung remover 
+https://www.remove.bg/ko -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <title>lee&#39;s Portfolio</title>
+    <meta name="description" content="영수의 포트폴리오사이트" />
+
+    <meta name="author" content="leeyxoo" />
+    <!-- creating favicon link https://convertio.co/kr/ -->
+    <link
+      rel="shortcut icon"
+      href="images/me-modified.ico"
+      type="image/x-icon"
+    />
+    <!-- <OG open graph data (facebook에서 만든건데 카카오톡에 내 웹 링크를 공유 하면 이미지가뜨는 그런 기능 )>  -->
+    <meta property="og:title" content="leeyxoo의 Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="배포후 생성된 link " />
+    <meta property="og:image" content="배포후 생성된 image url " />
+
+    <!-- <google font url> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <font-awesome url> -->
+    <script
+      src="https://kit.fontawesome.com/f51013893f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- <css> -->
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- java script  -->
+    <script src="src/main.js" defer></script>
+    <!-- defer란 html 먼저 실행해 주고 스크립트 코드는 그 나중에 하라고 브라우저 측에 말해주는 기능을 함 좀더 기능이 원할하게 해준다고 함. -->
+  </head>
+  <body>
+    <!----------------- Header------------------->
+    <header>
+      <div>
+        <img src="images/me-modified.ico" alt="logo" />
+        <h1><a href="#">leeyxoo</a></h1>
+
+        <!----------------- about a tag 링크 뿐만이 아니라 이메일 전화번호 링크 등 다양한 기능이 실행할수 있는 태그------------------->
+
+        <!-- <ul>
+  <li><a href="https://example.com">Website</a></li>
+  <li><a href="mailto:m.bluth@example.com">Email</a></li>
+  <li><a href="tel:+123456789">Phone</a></li>
+</ul> 
+<p><a href="#Section_further_down">Jump to the heading below</a></p>
+ID 로 이동할 수도 있음-->
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skills">SKILLLS</a></li>
+          <li><a href="#mywork">MY WORK</a></li>
+          <li><a href="#testimonial">Testimonial</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!----------------- Home--------------------->
+
+      <section id="home">
+        <img src="images/removeme.png" alt="lee's profile" />
+
+        <h2>Hello here is lee&#39;s Portfolio</h2>
+        <p>a softeware engineer currently residing in Seoul, South Korea</p>
+        <a href="#contact">contatct Me</a>
+      </section>
+      <!----------------- About--------------------->
+      <section id="about">
+        <h2>About me</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum. Why do we use it? It is a long
+          established fact that a reader will be distracted by the readable
+          content of a page when looking at its layout. The point of using Lorem
+          Ipsum is that it has a more-or-less normal distribution of letters, as
+          opposed to using 'Content here, content here', making it look like
+          readable English. Many desktop publishing packages and web page
+          editors now use Lorem Ipsum as their default model text, and a search
+          for 'lorem ipsum' will uncover many web sites still in their infancy.
+          Various versions have evolved over the years, sometimes by accident,
+          sometimes on purpose (injected humour and the like). Where does it
+          come from? Contrary to popular belief, Lorem Ipsum is not simply
+          random text. It has roots in a piece of classical Latin literature
+          from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+          professor at Hampden-Sydney College in Virginia, looked up one of the
+          more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+          going through the cites of the word in classical literature,
+          discovered the undoubtable source. Lorem Ipsum comes from sections
+          1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
+          of Good and Evil)
+        </p>
+        <ul>
+          <li>
+            <i class="fa-brands fa-html5"></i>
+            <p>Front-end</p>
+            <p>
+              js, html, css,html5 , 웹표준, vue.js , typscript,React, WebAPI
+            </p>
+          </li>
+          <li>
+            <i class="fa-solid fa-mobile"></i>
+            <p>Mobile</p>
+            <p>flutter ,kotlin, IOS,React-native, Android, Java</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-server"></i>
+            <p>Back-end</p>
+            <p>Java, Js, Go, Node Js, Rest- API</p>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <img src="images/jobs/google.png" alt="google logo" />
+            <div>
+              <p>Google as Senior Software engineer</p>
+              <p>2019 Oct- Until Now</p>
+            </div>
+          </li>
+
+          <li>
+            <img src="images/jobs/samsung.png" alt="samsung logo" />
+            <div>
+              <p>Google as Senior Software engineer</p>
+              <p>2016 NOv- 2019 Sep-</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!----------------- Skills--------------------->
+      <section id="skills">
+        <h2>My Skills</h2>
+        <section>Skills & Attributes</section>
+        <p>
+          my name is na genius . iam tamjug soljiki hal mal i eop susm gg but i
+          have to write something here. im doing amumal . i wanna go home plz
+          let me go home. if you wont let me go. im gonna kill my self.
+          understand?just . let. me. go. home
+        </p>
+
+        <div>
+          <section>
+            <h3>Coding Skills</h3>
+
+            <ul>
+              <li>
+                <div>
+                  <span>HTML</span>
+                  <span>98%</span>
+                </div>
+                <div><div style="width: 98%"></div></div>
+              </li>
+              <li>
+                <div>
+                  <span>CSS</span>
+                  <span>90%</span>
+                </div>
+                <div><div style="width: 98%"></div></div>
+              </li>
+              <li>
+                <div>
+                  <span>JavaScript</span>
+                  <span>88%</span>
+                </div>
+                <div><div style="width: 98%"></div></div>
+              </li>
+              <li>
+                <div>
+                  <span>TypeScript</span>
+                  <span>70%</span>
+                </div>
+                <div><div style="width: 98%"></div></div>
+              </li>
+              <li>
+                <div>
+                  <span>React</span>
+                  <span>70%</span>
+                </div>
+                <div><div style="width: 98%"></div></div>
+              </li>
+              <li>
+                <div>
+                  <span>NodeJs</span>
+                  <span>68%</span>
+                </div>
+                <div><div style="width: 98%"></div></div>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Tools</h3>
+            <ul>
+              <li>Visual Studio</li>
+              <li>IntelliJ</li>
+              <li>Android Studio Code</li>
+              <li>IOS development Tools</li>
+              <li>Sketch App</li>
+            </ul>
+            <ul>
+              <li>Git</li>
+              <li>Scrum Master</li>
+              <li>Math</li>
+            </ul>
+          </section>
+          <section>
+            <h3>ETC</h3>
+          </section>
+        </div>
+        <p></p>
+        <p></p>
+      </section>
+      <!----------------- Work--------------------->
+      <section id="work">
+        <h2>My Work</h2>
+        <p>Projects</p>
+        <ul>
+          <li>
+            <button>All<span>8</span></button>
+          </li>
+          <li>
+            <button>Front-end<span></span>3</button>
+          </li>
+          <li>
+            <button>Back-end<span></span>3</button>
+          </li>
+          <li>
+            <button>Mobile<span></span>2</button>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#" target="_blank">
+              <img src="images/projects/project1.webp" alt="project1" />
+              <div>
+                <h3>project #1</h3>
+                <p>Clone Coding with HTML,CSS</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="images/projects/project2.webp" alt="project2" />
+              <div>
+                <h3>project #2</h3>
+                <p>Clone Coding with HTML,CSS</p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" target="_blank">
+              <img src="images/projects/project3.webp" alt="project3" />
+              <div>
+                <h3>project #3</h3>
+                <p>Clone Coding with HTML,CSS</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="images/projects/project4.webp" alt="project4" />
+              <div>
+                <h3>project #4</h3>
+                <p>Clone Coding with HTML,CSS</p>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" target="_blank">
+              <img src="images/projects/project5.webp" alt="project5" />
+              <div>
+                <h3>project #5</h3>
+                <p>Clone Coding with HTML,CSS</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="images/projects/project6.webp" alt="project6" />
+              <div>
+                <h3>project #6</h3>
+                <p>Clone Coding with HTML,CSS</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="images/projects/project7.webp" alt="project7" />
+              <div>
+                <h3>project #7</h3>
+                <p>Clone Coding with HTML,CSS</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="images/projects/project8.webp" alt="project8" />
+              <div>
+                <h3>project #8</h3>
+                <p>Clone Coding with HTML,CSS</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!----------------- Testimonial--------------------->
+      <section id="testimonial">
+        <h2>Testimonial</h2>
+        <p>See what they say about me</p>
+        <ul>
+          <li>
+            <img src="images/testimonials/people1.webp" alt="people1" />
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+              voluptatibus doloremque, dolor quasi vero nulla harum laborum
+              explicabo ullam minima! Corporis eius doloremque tempore quod
+              natus assumenda modi! Aspernatur, provident.
+            </div>
+            <p><a a href="#">jameskim</a> /Google</p>
+          </li>
+          <li>
+            <img src="images/testimonials/people2.webp" alt="people2" />
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+              voluptatibus doloremque, dolor quasi vero nulla harum laborum
+              explicabo ullam minima! Corporis eius doloremque tempore quod
+              natus assumenda modi! Aspernatur, provident.
+            </div>
+            <p><a a href="#">AnnaJin</a> /Samsung</p>
+          </li>
+          <li>
+            <img src="images/testimonials/people3.webp" alt="people3" />
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+              voluptatibus doloremque, dolor quasi vero nulla harum laborum
+              explicabo ullam minima! Corporis eius doloremque tempore quod
+              natus assumenda modi! Aspernatur, provident.
+            </div>
+            <p><a a href="#">mumuha</a> /LG</p>
+          </li>
+        </ul>
+      </section>
+      <!----------------- contact--------------------->
+      <section id="contatct"></section>
+      <!----------------- Arrow Up--------------------->
+
+      <aside>
+        <a href="home" title="back to top">
+          <i class="fa-solid fa-arrow-up"> </i
+        ></a>
+        <!-- title 을 넣어주는 이유는 a tag안에 이모티콘 만 있고 의미를 담아주는 정보가 없어서 웹 홈페이지를 들으면서 접근할때 이해하기 쉽게 title요소를 넣어줌 -->
+      </aside>
+    </main>
+    <!----------------- Footer------------------->
+    <footer>
+      <h2>let&#39;s Talk</h2>
+      <p>ys971119@gmail.com</p>
+      <ul>
+        <li>
+          <a
+            href="https://github.com/AGACHUU"
+            target="_blank"
+            title="mygithublink"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://blog.naver.com/leeyxoo"
+            target="_blank"
+            title="mynaverblog"
+          >
+            <i class="fa-brands fa-blogger-b"></i>
+          </a>
+        </li>
+      </ul>
+      <p>©️ Dream Coding leeyxoo All right reserved</p>
+    </footer>
+  </body>
+</html>
