@@ -232,3 +232,72 @@ header {
 
   font-size: 0.8rem;
 }
+
+/* skills  */
+
+#skills {
+  background-color: var(--color-primiary-variant);
+  color: var(--color-text);
+}
+
+/* id=skills는 있는데 클래스 명 skills는 없는데 어떻게 .skills를 사용하는지 이해가안감 */
+.skills {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  margin: 2rem 3rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.skills__title {
+  color: var(--color-accent);
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+.skills__coding {
+  /* 2개의 칸합병 */
+  grid-row: span 2;
+  padding: 1rem;
+  /* color primary가 왜 블랙으로 선언 되어 있는데 안먹히는지 모르겠음  */
+  background-color: var(--color-primary);
+
+  padding: 1rem;
+}
+
+.skills__tools {
+  padding: 1rem;
+}
+
+.skills__etc {
+  padding: 1rem;
+  background-color: var(--color-primary);
+  filter: brightness(150%);
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  /* gap: 0.5rem; */
+}
+
+.bar__metadata {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar__bg {
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-primiary-variant);
+  /* filter: brightness(30%); */
+}
+
+.bar__value {
+  height: 3px;
+  background-color: var(--color-accent);
+}
