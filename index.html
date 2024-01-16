@@ -403,39 +403,59 @@ ID 로 이동할 수도 있음-->
         </div>
       </section>
       <!----------------- Testimonial--------------------->
-      <section id="testimonial" class="section">
+      <section id="testimonial" class="section max-container">
         <h2 class="title">Testimonial</h2>
         <p class="description">See what they say about me</p>
-        <ul>
-          <li>
-            <img src="images/testimonials/people1.webp" alt="people1" />
-            <div>
+        <ul class="testimonials">
+          <li class="testimonial">
+            <img
+              src="images/testimonials/people1.webp"
+              alt="people1"
+              class="testimonial__img"
+            />
+            <div class="testimonial__bubble">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
               voluptatibus doloremque, dolor quasi vero nulla harum laborum
               explicabo ullam minima! Corporis eius doloremque tempore quod
               natus assumenda modi! Aspernatur, provident.
+              <p>
+                <a href="#" class="testimonial__bubble__name">jameskim</a>
+                /Google
+              </p>
             </div>
-            <p><a a href="#">jameskim</a> /Google</p>
           </li>
-          <li>
-            <img src="images/testimonials/people2.webp" alt="people2" />
-            <div>
+          <li class="testimonial">
+            <img
+              src="images/testimonials/people2.webp"
+              alt="people2"
+              class="testimonial__img"
+            />
+            <div class="testimonial__bubble">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
               voluptatibus doloremque, dolor quasi vero nulla harum laborum
               explicabo ullam minima! Corporis eius doloremque tempore quod
               natus assumenda modi! Aspernatur, provident.
+              <p>
+                <a href="#" class="testimonial__bubble__name">AnnaJin</a>
+                /Samsung
+              </p>
             </div>
-            <p><a a href="#">AnnaJin</a> /Samsung</p>
           </li>
-          <li>
-            <img src="images/testimonials/people3.webp" alt="people3" />
-            <div>
+          <li class="testimonial">
+            <img
+              src="images/testimonials/people3.webp"
+              alt="people3"
+              class="testimonial__img"
+            />
+            <div class="testimonial__bubble">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
               voluptatibus doloremque, dolor quasi vero nulla harum laborum
               explicabo ullam minima! Corporis eius doloremque tempore quod
               natus assumenda modi! Aspernatur, provident.
+              <p>
+                <a href="#" class="testimonial__bubble__name">mumuha</a> /LG
+              </p>
             </div>
-            <p><a a href="#">mumuha</a> /LG</p>
           </li>
         </ul>
       </section>
@@ -444,7 +464,7 @@ ID 로 이동할 수도 있음-->
       <!----------------- Arrow Up--------------------->
 
       <aside>
-        <a href="home" title="back to top">
+        <a href="home" title="back to top" class="arrow-up">
           <i class="fa-solid fa-arrow-up"> </i
         ></a>
         <!-- title 을 넣어주는 이유는 a tag안에 이모티콘 만 있고 의미를 담아주는 정보가 없어서 웹 홈페이지를 들으면서 접근할때 이해하기 쉽게 title요소를 넣어줌 -->
@@ -452,29 +472,33 @@ ID 로 이동할 수도 있음-->
     </main>
     <!----------------- Footer------------------->
     <footer id="contatct" class="section">
-      <h2 class="title">let&#39;s Talk</h2>
-      <p class="description">ys971119@gmail.com</p>
-      <ul>
-        <li>
-          <a
-            href="https://github.com/AGACHUU"
-            target="_blank"
-            title="mygithublink"
-          >
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://blog.naver.com/leeyxoo"
-            target="_blank"
-            title="mynaverblog"
-          >
-            <i class="fa-brands fa-blogger-b"></i>
-          </a>
-        </li>
-      </ul>
-      <p>©️ Dream Coding leeyxoo All right reserved</p>
+      <div class="max-container">
+        <h2 class="title">let&#39;s Talk</h2>
+        <p class="description">ys971119@gmail.com</p>
+        <ul class="contact__links">
+          <li>
+            <a
+              class="contact__link"
+              href="https://github.com/AGACHUU"
+              target="_blank"
+              title="mygithublink"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="contact__link"
+              href="https://blog.naver.com/leeyxoo"
+              target="_blank"
+              title="mynaverblog"
+            >
+              <i class="fa-brands fa-blogger-b"></i>
+            </a>
+          </li>
+        </ul>
+        <p>©️ Dream Coding leeyxoo All right reserved</p>
+      </div>
     </footer>
   </body>
 </html>
