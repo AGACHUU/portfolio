@@ -356,3 +356,59 @@ header {
   opacity: 1;
   top: 0;
 }
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  /* 그리트 템플릿을 일정하게 1배율로 4번 반복한다는뜻 */
+  gap: 1rem;
+}
+
+.project {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.project__img {
+  width: 100%;
+}
+
+.project__metadata {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin: auto; */
+
+  transition: all 200ms ease-in;
+  transform: translateY(-10px);
+}
+
+.project__metadata:hover {
+  opacity: 0.8;
+  transform: translateY(0px);
+}
+
+/* html에는 없는데 가상의 요소를 만들어줌 css에서만 
+title 요소 전에 넣고 싶으면 before 지금처럼 밑에 바를 넣고 싶다면 after*/
+.project__title::after {
+  /* 실제내용은 없음 */
+  content: '';
+  display: block;
+  position: relative;
+  transform: translateX(-50%);
+  margin: 0.5rem 0;
+  left: 50%;
+  width: 50px;
+  height: 2px;
+  background-color: var(--color-accent);
+}
