@@ -85,6 +85,7 @@ button:focus {
   font-size: 1.5rem;
   margin: 0.5rem 0;
 }
+
 /* HEADER */
 header {
   position: fixed;
@@ -483,4 +484,83 @@ title 요소 전에 넣고 싶으면 before 지금처럼 밑에 바를 넣고 �
 
 .contact__link {
   transition: color 300ms ease-in;
+}
+
+/* 0부터 768px까지  */
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 3rem 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .header__menu {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 4rem;
+    gap: 1rem;
+  }
+  .home__title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .header__nav {
+    width: 100%;
+  }
+  #home {
+    margin-bottom: 3rem;
+  }
+
+  .majors {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .major {
+    max-width: 25rem;
+  }
+
+  .job {
+    justify-content: center;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+  }
+
+  .categories {
+    flex-direction: column;
+  }
+
+  .category {
+    width: 100%;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial:nth-child(even) .testimonial__img {
+    order: 0;
+  }
+
+  .arrow-up {
+    font-size: 2rem;
+
+    width: 3rem;
+    height: 3rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
 }
