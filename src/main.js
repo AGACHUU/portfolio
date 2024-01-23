@@ -33,3 +33,14 @@ document.addEventListener('scroll', () => {
     //그떄는 header--dark를 지워줌
   }
 });
+
+//home section을 아래로 스크롤시 투명하게 처리함.
+const home = document.querySelector('.home__container');
+const homeHeight = home.offsetHeight;
+//offsetHeight을 사용해서 높이를 받아와줌
+//opacity 는 1이 완전하게 보이는거 0이 아무것도 안보이는거라고 이해하면 됨.
+// 밑에는 스크롤을 내리면 홈 화면의 투명도가 0으로 내려가는기능을 구현함/
+document.addEventListener('scroll', () => {
+  console.log(1 - window.scrollY / homeHeight);
+  home.style.opacity = 1 - window.scrollY / homeHeight;
+});
