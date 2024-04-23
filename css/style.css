@@ -62,7 +62,7 @@ button {
 
 button:focus {
   /* 한번클릭하면 블루로 포커싱댐 */
-  outline: 1px solid var(--color-accent);
+  outline: 1px solid transparent;
 }
 
 /* COMMON */
@@ -99,7 +99,7 @@ button:focus {
   padding: 1rem;
   z-index: 1;
   transition: all 300ms ease;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; */
 }
 
 .header--dark {
@@ -120,6 +120,14 @@ button:focus {
 .header__logo__title {
   font-size: 1.8rem;
 }
+.header__toggle {
+  display: none;
+  color: var(--color-white);
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1.1rem;
+  right: 1rem;
+}
 
 .header__menu {
   display: flex;
@@ -128,14 +136,14 @@ button:focus {
 
 .header__menu__item {
   padding: 8px 16px;
+  display: block;
+  border-bottom: 1px solid transparent;
 }
 
 .header__menu__item:hover {
-  border-bottom: 1px solid var(--color-accent);
 }
 
 .header__menu__item.active {
-  border: 1px solid var(--color-accent);
   border-radius: 4px;
 }
 
@@ -468,6 +476,7 @@ title 요소 전에 넣고 싶으면 before 지금처럼 밑에 바를 넣고 �
   border-radius: 100%;
   text-align: center;
   box-shadow: 5px 5px 0px 0px var(--color-accent);
+  transition: opacity 300ms ease-in;
 }
 
 /* footer */
@@ -496,7 +505,7 @@ title 요소 전에 넣고 싶으면 before 지금처럼 밑에 바를 넣고 �
 /* 0부터 768px까지  */
 @media screen and (max-width: 768px) {
   .section {
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
   }
 
   .title {
@@ -510,13 +519,33 @@ title 요소 전에 넣고 싶으면 before 지금처럼 밑에 바를 넣고 �
     flex-direction: column;
     align-items: start;
   }
+  .header__toggle {
+    display: block;
+    padding: 8px 16px;
+    border-bottom: 1px solid transparent;
+    color: var(--color-white);
+  }
+
+  .header__menu__item:active {
+    border-bottom: 1px solid var(--color-accent);
+  }
+
+  .header__menu__item:hover {
+    border-bottom: 1px solid var(--color-accent);
+  }
 
   .header__menu {
+    display: none;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 4rem;
+    margin: 1rem 4rem;
     gap: 1rem;
   }
+  .header__menu.open {
+    display: flex;
+    background-color: var(--color-black);
+  }
+
   .home__title {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;

@@ -7,9 +7,9 @@
 //윈도우는 글로벌 객체라고 하는데 그건 브라우저에서 기본적인 객체이다.
 
 // const header = document.querySelector('.header');
-const header = document.querySelector('.header');
 // const headerRect = header.getBoundingClientRect();
 // console.log(headerRect);
+const header = document.querySelector('.header');
 const headerHeight = header.getBoundingClientRect().height;
 //getBoundingClientRect이란 요소의 높이를 측정해주는 함수.
 // 중간중간에 원시값이 반환이 되는지 콘솔로그로 확인해보는 습관을 가짐
@@ -19,10 +19,9 @@ document.addEventListener('scroll', () => {
   //원래 funtction(){기능 어쩌고 }이런 형태 이지만 이름 없는 함수는 function을 생략하고
   //() => {}이런식으로 적어도 됨.
 
-  console.log(window.scrollY);
   //scroll되는 y(세로)길이가  headerheight보다 크다면 다른 스타일링 구현해주기
   //scrollY값을 이용해서 얼마나 스크롤 되었는지 확인하기
-  if (window.scrollY > headerHeight) {
+  if (window.scrollY < headerHeight) {
     header.classList.add('header--dark');
   } //window에서 제공해주는  scrollY 좌표가 headerheight보다 크다면
   // header요소에 class 리스트에 header--dark를 모디파이어를 가진 클래스를 추가해줌.
@@ -41,6 +40,29 @@ const homeHeight = home.offsetHeight;
 //opacity 는 1이 완전하게 보이는거 0이 아무것도 안보이는거라고 이해하면 됨.
 // 밑에는 스크롤을 내리면 홈 화면의 투명도가 0으로 내려가는기능을 구현함/
 document.addEventListener('scroll', () => {
-  console.log(1 - window.scrollY / homeHeight);
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
+
+//Arrowup 버튼을 아랠로 스크롤시 투명하게 하기
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+  if (window.scrollY > homeHeight / 2) {
+    arrowUp.style.opacity = 1;
+  } else {
+    arrowUp.style.opacity = 0;
+  }
+});
+
+//navbar토글 버튼 클릭 처리
+const navbarMenu = document.querySelector('.header__menu');
+const navbarToggle = document.querySelector('.header__toggle');
+navbarToggle.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
+});
+
+//navbar메뉴 클릭시 메뉴를 자동으로 닫아줌
+navbarMenu.addEventListener('click', () => {
+  navbarMenu.classList.remove('open');
+});
+
+//navbar메뉴안에서만 발생하는 클릭에 대해서만토글키가 닫아짐.
