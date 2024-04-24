@@ -1,3 +1,5 @@
+'use strict';
+
 // document.querySelector('.header');
 // document란 문서 전체에 대한 정보를 가지고 있는 객체
 //document는 어디서 왔나?

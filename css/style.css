@@ -379,12 +379,17 @@ button:focus {
   grid-template-rows: repeat(2, 1fr);
   /* 그리트 템플릿을 일정하게 1배율로 4번 반복한다는뜻 */
   gap: 1rem;
+  transition: all 200ms ease-out;
 }
 
+.projects.anim-out {
+  opacity: 0;
+  transform: scale(0.96) translateY(20px);
+}
 .project {
+  position: relative;
   border-radius: 8px;
   overflow: hidden;
-  position: relative;
 }
 
 .project__img {
