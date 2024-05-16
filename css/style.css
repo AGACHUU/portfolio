@@ -517,6 +517,10 @@ footer {
   transition: color 300ms ease-in;
 }
 
+.view-mo {
+  display: none;
+}
+
 /* 0부터 768px까지  */
 @media screen and (max-width: 768px) {
   .section {
@@ -613,5 +617,9 @@ footer {
     height: 3rem;
     bottom: 1.5rem;
     right: 1.5rem;
+  }
+
+  .view-mo {
+    display: block;
   }
 }
