@@ -28,6 +28,9 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
@@ -141,9 +144,11 @@ button:focus {
 }
 
 .header__menu__item:hover {
+  border-bottom: 1px solid var(--color-accent);
 }
-
 .header__menu__item.active {
+  border: 1px solid var(--color-accent);
+
   border-radius: 4px;
 }
 
@@ -485,6 +490,11 @@ title 요소 전에 넣고 싶으면 before 지금처럼 밑에 바를 넣고 �
 }
 
 /* footer */
+
+footer {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
 
 #contatct {
   background-color: var(--color-primary);

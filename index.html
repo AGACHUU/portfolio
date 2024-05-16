@@ -45,6 +45,7 @@ https://www.remove.bg/ko -->
     <!-- java script  -->
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/project.js" defer></script>
+    <script type="module" src="src/active_menu.js" defer></script>
 
     <!-- defer란 html 먼저 실행해 주고 스크립트 코드는 그 나중에 하라고 브라우저 측에 말해주는 기능을 함 좀더 기능이 원할하게 해준다고 함. -->
   </head>
@@ -272,7 +273,7 @@ ID 로 이동할 수도 있음-->
         </div>
       </section>
       <!----------------- Work--------------------->
-      <section id="work" class="section">
+      <section id="mywork" class="section">
         <div class="max-container">
           <h2 class="title">My Work</h2>
           <p class="description">Projects</p>
@@ -283,7 +284,7 @@ ID 로 이동할 수도 있음-->
               </button>
             </li>
             <li>
-              <button class="category" data-category="front-end">
+              <button class="category" data-category="front-end" data-hi="영수">
                 Front-end<span class="category__count">4</span>
               </button>
             </li>
@@ -473,14 +474,14 @@ ID 로 이동할 수도 있음-->
       <!----------------- Arrow Up--------------------->
 
       <aside>
-        <a href="home" title="back to top" class="arrow-up">
+        <a href="#home" title="back to top" class="arrow-up">
           <i class="fa-solid fa-arrow-up"> </i
         ></a>
         <!-- title 을 넣어주는 이유는 a tag안에 이모티콘 만 있고 의미를 담아주는 정보가 없어서 웹 홈페이지를 들으면서 접근할때 이해하기 쉽게 title요소를 넣어줌 -->
       </aside>
     </main>
     <!----------------- Footer------------------->
-    <footer id="contatct" class="section">
+    <footer id="contact" class="section">
       <div class="max-container">
         <h2 class="title">let&#39;s Talk</h2>
         <p class="description">ys971119@gmail.com</p>
